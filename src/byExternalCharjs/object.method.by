@@ -39,6 +39,14 @@
         { charjs, fullMix"混合图", {  }, { static}, { string f_canvasID"html中的canvasID名称，即要绘在哪一个canvas标签上",string[] f_chartType"enum.chartType图表类型",string[] f_label"当前图的说明/记录",string[] f_labels"每一部分的说明，本项要与f_data长度保持一致",float[][] f_data"要展示的数据，两维数组，格式：[[1,2,3],[3,4,5]...]" ,string[] f_backgroundColor "背景颜色",string[]  f_borderColor "跟记录数量保持一致",string[]  f_pointBackgroundColor  "跟记录数量保持一致"}, void,  }
         { echartjs, hello"hello", {  }, { static}, { string f_canvasID"测试"} ,void ,}
         { echartjs, areaStackGradient"创建一个区域堆栈渐变", {  }, { static}, { string id "应用渐变的元素的ID", string title "图表的标题", string[] names "系列的名称", float[][] data "系列的数据,第二维与names一致", string[] xAxis "x轴的标签" } ,void ,}
+        { echartjs, lineRace"创建一个区域堆栈渐变", {  }, { static}, { string chartData "chartData 的json格式" } ,string ,}
        
+        { ChartData, ChartData "构造方法", , {  }, { string label "标签",float xData "x 数据",int yData "y 数据"}, , { 
+           //基构造方法请写在第一行
+            this.label=label;
+            this.xData=xData;
+            this.yData=yData;
+            
+        } }
 }
 }

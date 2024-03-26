@@ -109,6 +109,8 @@ window.byExternalEChartjs_byEChartjs = (function () {
             option && myChart.setOption(option);
     
         }
-           
+    static lineRace(data){
+      console.log(data, 'data');
+    }       
     }
 })()

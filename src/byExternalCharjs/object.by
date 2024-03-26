@@ -16,5 +16,6 @@
        // { datasetsMember "datasets成员", { web,server }, {  }, class, , {  } } 
         { charjs "webjs库 调用原生charjs库在页面上绘制", { web }, { external }, class, , {  } }
         { echartjs "webjs库 调用原生charjs库在页面上绘制", { web }, { external }, class, , {  } }
+        { ChartData "echartjs line race 图表的数据", { server, web }, {  }, class, , {  } }
     }
 }
